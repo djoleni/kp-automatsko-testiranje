@@ -1,0 +1,21 @@
+{
+  "name": "kp-playwright-tests",
+  "version": "1.0.0",
+  "description": "Automatski testovi za KupujemProdajem (Playwright + TypeScript)",
+  "private": true,
+  "scripts": {
+    "postinstall": "playwright install chromium firefox",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install",
+    "codegen": "playwright codegen https://www.kupujemprodajem.com"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
